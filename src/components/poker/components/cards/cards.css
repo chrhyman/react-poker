@@ -1,0 +1,60 @@
+.cardlist {
+  width: 100%;
+}
+
+.cardlist ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 5%;
+}
+
+.cardlist ul li {
+  display: inline-block;
+}
+
+.card-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-container.selected {
+  background-color: #ddd;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+
+.card p {
+  min-width: 25pt;
+}
+
+.card.red {
+  color: red;
+}
+
+.card.black {
+  color: black;
+}
+
+.card-container .held {
+  position: absolute;
+  top: 75px;
+  padding: 0;
+  margin: 0;
+  color: #222;
+  font-weight: bold;
+  opacity: 0.6;
+}
